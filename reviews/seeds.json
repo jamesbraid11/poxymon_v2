@@ -1,0 +1,13 @@
+[
+{
+  "model": "reviews.review",
+  "pk": 2,
+  "fields": {
+    "text": "Wicked poxymon",
+    "created_at": "2024-01-25T21:54:52.403Z",
+    "updated_at": "2024-01-25T21:54:52.403Z",
+    "record": 2,
+    "creator": 2
+  }
+}
+]

@@ -1,0 +1,128 @@
+[
+{
+  "model": "poxymon_types.type",
+  "pk": 1,
+  "fields": {
+    "name": "Fire"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 2,
+  "fields": {
+    "name": "Water"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 3,
+  "fields": {
+    "name": "Grass"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 4,
+  "fields": {
+    "name": "Normal"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 5,
+  "fields": {
+    "name": "Flying"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 6,
+  "fields": {
+    "name": "Fighting"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 7,
+  "fields": {
+    "name": "Poison"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 8,
+  "fields": {
+    "name": "Electric"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 9,
+  "fields": {
+    "name": "Ground"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 10,
+  "fields": {
+    "name": "Rock"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 11,
+  "fields": {
+    "name": "Psychic"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 12,
+  "fields": {
+    "name": "Ice"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 13,
+  "fields": {
+    "name": "Bug"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 14,
+  "fields": {
+    "name": "Ghost"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 15,
+  "fields": {
+    "name": "Steel"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 16,
+  "fields": {
+    "name": "Dragon"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 17,
+  "fields": {
+    "name": "Dark"
+  }
+},
+{
+  "model": "poxymon_types.type",
+  "pk": 18,
+  "fields": {
+    "name": "Fairy"
+  }
+}
+]

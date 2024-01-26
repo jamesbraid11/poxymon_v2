@@ -1,0 +1,24 @@
+[
+{
+  "model": "poxymon.poxymon",
+  "pk": 1,
+  "fields": {
+    "name": "Instructor Ill",
+    "description": "This instructor poxymon struggles to regulate its body temperature; it is never completely warm. Working remotely helps to protect others from its many contaminations.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706273966/poxymon/instructor-ill_hrgthb.png",
+    "hp": 150,
+    "speed": 180,
+    "move_one_name": "Balsam Spew",
+    "move_one_type": 7,
+    "move_one_power": 90,
+    "move_two_name": "Icy Grasp",
+    "move_two_type": 12,
+    "move_two_power": 80,
+    "creator": 1,
+    "type": [
+      7
+    ],
+    "likes": []
+  }
+}
+]

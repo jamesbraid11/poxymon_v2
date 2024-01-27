@@ -36,12 +36,12 @@ export default function Nav() {
       username: '',
       email: '',
       password: '',
-      passwordConfirmation: ''
+      password_confirmation: ''
     })
 
   const [loginData, setLoginData] = useState(
     {
-      email: '',
+      username: '',
       password: ''
     })
 
@@ -56,9 +56,9 @@ export default function Nav() {
   async function submitRegistration(e) {
     e.preventDefault()
     const res = await registerUser(registerData)
-    // console.log(res)
+    console.log(res)
     if (res.status === 201) {
-      // console.log('REGISTRATION SUCCESSFUL')
+      console.log('REGISTRATION SUCCESSFUL')
       setModalShow(false)
       setLoginModalShow(true)
     }
@@ -67,9 +67,9 @@ export default function Nav() {
   async function submitLogin(e) {
     e.preventDefault()
     const res = await loginUser(loginData)
-    // console.log(res)
-    if (res.status === 202) {
-      // console.log('LOGIN SUCCESSFUL')
+    console.log(res)
+    if (res.status === 200) {
+      console.log('LOGIN SUCCESSFUL')
       setLoginModalShow(false)
       setToken(res.data.token)
     }
@@ -123,7 +123,7 @@ export default function Nav() {
               <input type='text' name='username' placeholder='Username...' onChange={handleChange} />
               <input type='email' name='email' placeholder='Email...' onChange={handleChange} />
               <input type='password' name='password' placeholder='Password...' onChange={handleChange} />
-              <input type='password' name='passwordConfirmation' placeholder='Confirm Password...' onChange={handleChange} />
+              <input type='password' name='password_confirmation' placeholder='Confirm Password...' onChange={handleChange} />
               <button className='btn btn-danger' type='submit' onClick={submitRegistration}>Register</button>
               {/* Below will return a message to user if username taken, etc. Need to set this up. */}
               {/* {res && <p className='danger'>{res.data.message}</p>} */}
@@ -146,7 +146,7 @@ export default function Nav() {
           <Modal.Body>
             <form className='log_in'>
               <h1 className='text-center bold display-3 mb-4'>Login</h1>
-              <input type='email' name='email' placeholder='Username...' onChange={handleLoginChange} />
+              <input type='text' name='username' placeholder='Username...' onChange={handleLoginChange} />
               <input type='password' name='password' placeholder='Password...' onChange={handleLoginChange} />
               <button className='btn btn-danger' type='submit' onClick={submitLogin}>Login</button>
               {/* Add message on server side to inform  visitor to login if haven't or other errors?*/}

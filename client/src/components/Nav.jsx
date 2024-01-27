@@ -1,12 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-// import Model from 'react-bootstrap/Modal'
-import Modal from 'react-bootstrap/Modal'
 
-import Button from 'react-bootstrap/Button'
-// import userIcon from '../images/image.png'
-import { FaRegUserCircle } from "react-icons/fa";
-// import { FaUserCircle } from "react-icons/fa";
+import Modal from 'react-bootstrap/Modal'
+import { FaRegUserCircle } from "react-icons/fa"
 
 import { setToken } from '../utils/helpers/common'
 import { registerUser, loginUser } from '../utils/actions/auth'
@@ -14,18 +10,9 @@ import { registerUser, loginUser } from '../utils/actions/auth'
 export default function Nav() {
 
   const toggleModal = () => {
-    // Toggle the state to show/hide the register modal
+    // Toggle the state to show/hide the login and register modals
     setLoginModalShow((prevShow) => !prevShow)
   }
-
-  // const navigate = useNavigate()
-
-  // useEffect(() => {
-  //   if (res?.status === 201) {
-  //     setToken(res.data.token)
-  //     navigate('/login')
-  //   }
-  // }, [res, navigate])
 
   const [show, setShow] = useState(false)
   const [modalShow, setModalShow] = useState(false)
@@ -80,10 +67,9 @@ export default function Nav() {
       <div className='navbar'>
         <div className="header-title"><Link to='/'></Link></div>
         <div className="header-menues">
-          <Button className="icon" onClick={toggleModal}>
+          <div className="icon" onClick={toggleModal}>
             <FaRegUserCircle fill="#80ff00" className="user-icon" />
-            {/* <img className='logo rounded-circle d-inline-block align-center' src={userIcon} height='50' alt='user icon' /> */}
-          </Button>
+          </div>
           <header className='p-2 p-md-3 p-lg-4'>
             <button className='nav-toggle' onClick={() => setShow(true)} >
               <span></span>
@@ -101,13 +87,16 @@ export default function Nav() {
                   <Link to='/' className='nav-link' >Home</Link>&nbsp;
                 </li>
                 <li className='nav-item'>
-                  <Link to='/wineryIndex' className='nav-link' >Winery Index</Link>&nbsp;
+                  <Link to='/poxymon' className='nav-link'>Poxymon</Link>&nbsp;
                 </li>
                 <li className='nav-item'>
-                  <Link to='/wineryIndex/create' className='nav-link' >Create Winery</Link>&nbsp;
+                  <Link to='/poxymon/create' className='nav-link'>Create Poxymon</Link>&nbsp;
                 </li>
                 <li className='nav-item'>
-                  <Link to='/profile' className='nav-link' >profile</Link>&nbsp;
+                  <Link to='/poxymon/create' className='nav-link'>Battle</Link>&nbsp;
+                </li>
+                <li className='nav-item'>
+                  <Link to='/profile' className='nav-link'>Profile</Link>&nbsp;
                 </li>
               </ul>
             </nav>

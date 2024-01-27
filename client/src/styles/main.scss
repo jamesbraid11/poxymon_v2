@@ -1,0 +1,13 @@
+@import './components/Nav.scss';
+@import './global/variables.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+  background-color: $very-light-green;
+  margin: 0;
+  height: 100vh;
+}

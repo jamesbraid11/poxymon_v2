@@ -2,6 +2,6 @@
 export default function ErrorPage() {
 
   return (
-    <h1>Hello World</h1>
+    <h1>Error Page</h1>
   )
 }

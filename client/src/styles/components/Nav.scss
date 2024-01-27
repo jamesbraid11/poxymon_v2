@@ -1,0 +1,199 @@
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle {
+  background: none;
+  border: none;
+  margin-right: 10px;
+  span {
+    height: 4px;
+    display: block;
+    width: 30px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #80ff00;
+    margin-bottom: 3px;
+  }
+}
+
+svg {
+  height: 30px;
+  width: 40px;
+  background: none;
+  border: none;
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh; 
+  box-sizing: border-box;
+  background: rgba(58,49,40,.65);
+  border-radius: 12px;
+  max-width: 400px;
+  padding: 8px;
+  width: 100%;
+}
+form.create {
+  position: fixed;
+  width: 450px;
+  position: fixed;
+  bottom: 40;
+  width: 100%;
+  position: absolute;
+  bottom: 4px;
+}
+.modal-body {
+  height: 50vh;
+}
+.modal-header{
+  border: none;
+}
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+li.nav-item {
+  background-color: rgba(58,49,40,.65);
+}
+.nav-item {
+  background-color: transparent;
+}
+.sign.in {
+  color: white;
+}
+button.btn-close {
+  background-color: white;
+  width: 100px;
+  height: 0px;
+}
+.modal-header {
+  width: 20px;
+}
+
+a.nav-link {
+  color: white;
+  margin-left: 80px;
+}
+li.nav-item {
+  background: none;
+}
+a.nav-link:hover {
+  color: rgb(106, 5, 5);
+}
+form.log_in {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 40vh; 
+  box-sizing: border-box;
+  background: rgba(58,49,40,.65);
+  border-radius: 12px;
+  max-width: 400px;
+  padding: 8px;
+  width: 100%;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(1px);
+}
+.icon {
+  margin: 20px;
+  
+}
+
+input {
+  background-color: #fff;
+  margin: 6px;
+  padding: 10px;
+  border: none;
+  border-radius: 9px;
+  display: block;
+  height: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%
+}
+
+.centered-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  background-color: #458900;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+}
+:root.fade.modal-backdrop.show {
+  background-color: transparent;
+}
+.indexs {
+  width: 300px;
+  background-color: rgba(58,49,40,.65);
+  backdrop-filter: blur(1px);
+  background-color: transparent;
+}
+
+.btn-primary {
+  background: transparent;
+  border: none;
+}
+.btn.btn-danger {
+  margin-bottom: 10px;
+}
+.btn-primary:hover {
+  background-color: transparent;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.header-menues {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-title {
+  width: 150px;
+  height: 50px;
+  background-image: url('../images/poxymon-logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 20px;
+}
+
+.user-icon {
+  color: #80ff00 !important;
+  height: 37px !important;
+}
+
+button.icon.btn.btn-primary {
+  margin: auto 0px;
+}

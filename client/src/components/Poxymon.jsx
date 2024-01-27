@@ -2,6 +2,6 @@
 export default function Poxymon() {
 
   return (
-    <h1>Hello World</h1>
+    <h1>Poxymon</h1>
   )
 }

@@ -66,7 +66,7 @@ export default function Nav() {
     <>
       <div className='navbar'>
         <div className="header-title"><Link to='/'></Link></div>
-        <div className="header-menues">
+        <div className="header-menus">
           <div className="icon" onClick={toggleModal}>
             <FaRegUserCircle fill="#80ff00" className="user-icon" />
           </div>
@@ -77,12 +77,13 @@ export default function Nav() {
               <span></span>
             </button>
           </header>
+        </div>
 
-          <Modal show={show} fullscreen={true} onHide={() => setShow(false)} className='indexs'>
+          <Modal show={show} fullscreen={false} onHide={() => setShow(false)} className='index'>
             <Modal.Header closeButton>
             </Modal.Header>
             <nav onClick={() => setShow(false)}>
-              <ul className=' burger-menu nav nav-underline navbar-link-danger bg-link-danger'>
+              <ul className='burger-menu nav nav-underline'>
                 <li className='nav-item'>
                   <Link to='/' className='nav-link' >Home</Link>&nbsp;
                 </li>
@@ -93,7 +94,7 @@ export default function Nav() {
                   <Link to='/poxymon/create' className='nav-link'>Create Poxymon</Link>&nbsp;
                 </li>
                 <li className='nav-item'>
-                  <Link to='/poxymon/create' className='nav-link'>Battle</Link>&nbsp;
+                  <Link to='/poxymon/battle' className='nav-link'>Battle</Link>&nbsp;
                 </li>
                 <li className='nav-item'>
                   <Link to='/profile' className='nav-link'>Profile</Link>&nbsp;
@@ -101,7 +102,6 @@ export default function Nav() {
               </ul>
             </nav>
           </Modal>
-        </div>
 
         <Modal show={modalShow} halfscreen="true" onHide={() => setModalShow(false)} className='centered-modal'>
           <Modal.Header closeButton>

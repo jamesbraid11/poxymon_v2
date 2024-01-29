@@ -1,14 +1,46 @@
-.card-container {
-  overflow: auto;
-  width: 330px;
-  border-radius: 10px;
-  background-color: black;
+.hero {
+  height: 83vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
+.title-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  background-image: url('../images/poxymon-logo.png');
+  height: 200px;
+  width: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+// .card-container {
+//   overflow: auto;
+//   width: 330px;
+//   border-radius: 10px;
+//   background-color: black;
+// }
+
 #card {
+  width: 320px;
   margin: 10px 10px;
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
+  border-radius: 15px;
+  border: 5px solid black;
 }
 
 #card img {
@@ -20,16 +52,6 @@
   border: 3px solid black;
   background-color: #eff3ff;
 }
-
-// .hp {
-//   width: 80px;
-//   background-color: #ffffff;
-//   text-align: center;
-//   padding: 8px 0;
-//   border-radius: 30px;
-//   margin-left: auto;
-//   font-weight: 400;
-// }
 
 .poxymon-name {
   text-align: center;
@@ -87,7 +109,6 @@
 
 .moves-container {
   display: flex;
-  align-items: center;
   justify-content: center;
   font-size: 14px;
   padding: 0 0 10px 0;
@@ -95,6 +116,10 @@
 
 .move-types, .move-power {
   text-align: center;
+}
+
+.move-names {
+  text-align: left;
 }
 
 .moves {

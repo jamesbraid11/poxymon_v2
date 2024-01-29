@@ -67,9 +67,6 @@ form.create {
   background-color: transparent;
   border: none;
 }
-li.nav-item {
-  background-color: rgba(58,49,40,.65);
-}
 .nav-item {
   background-color: transparent;
 }
@@ -78,7 +75,7 @@ li.nav-item {
 }
 button.btn-close {
   background-color: white;
-  width: 100px;
+  width: 0px;
   height: 0px;
 }
 .modal-header {
@@ -116,7 +113,6 @@ form.log_in {
 }
 .icon {
   margin: 20px;
-  
 }
 
 input {
@@ -157,11 +153,12 @@ nav {
 :root.fade.modal-backdrop.show {
   background-color: transparent;
 }
-.indexs {
-  width: 100px;
+.index {
+  width: 200px;
   background-color: rgba(58,49,40,.65);
-  backdrop-filter: blur(1px);
+  // backdrop-filter: blur(1px);
   background-color: transparent;
+  align-items: right;
 }
 
 
@@ -172,7 +169,7 @@ nav {
   background-color: transparent;
 }
 
-.header-menues {
+.header-menus {
   display: flex;
   flex-direction: row;
 }
@@ -189,6 +186,9 @@ nav {
 
 .user-icon {
   height: 37px;
+}
+.user-icon:hover {
+  cursor: pointer;
 }
 
 .button {

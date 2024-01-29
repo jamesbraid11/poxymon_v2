@@ -5,29 +5,14 @@ export default function Home() {
 
   const allPoxymon = useLoaderData()
 
-  // const [idList, setIdList] = useState([])
-  // const [idRnd, setIdRnd] = useState(0)
   const [poxymon, setPoxymon] = useState(allPoxymon[0])
 
-  //   async function getRandomPoxymon() {
-  //   const res = await fetch(`/api/poxymon/${idRnd}/`)
-  //   return setPoxymon(res.json())
-  // }
-
-  console.log(allPoxymon)
-  console.log(poxymon)
-
-  // useEffect(() => {
-  //   const  = allPoxymon.map(poxymon => {
-  //     return poxymon
-  //   })
-  //   setIdList(ids)
-  // }, [allPoxymon])
+  // console.log(allPoxymon)
+  // console.log(poxymon)
 
   useEffect(() => {
     const i = Math.floor(Math.random() * allPoxymon.length)
     setPoxymon(allPoxymon[i])
-    console.log(poxymon)
   }, [allPoxymon])
 
   function randomId() {
@@ -39,13 +24,13 @@ export default function Home() {
     <section className="hero">
       <div className="title-section">
         <div className="title"></div>
-        <p className="about"></p>
+        <p className="about">Welcome to the truly unremarkable world of Poxymon. <br></br>Create and battle poxymon on your way to becoming a <br />Poxymon Master!</p>
       </div>
       <div className="card-container">
+        <button id="btn-generate" onClick={randomId}>Discover Poxymon!</button>
         <div className={poxymon.type[0].name} id="card">
-          
           <div className="stats">
-            <div className="main-stats">Spd {poxymon.speed}</div>
+            <div className="main-stats">SPE {poxymon.speed}</div>
             <div className="type" id={poxymon.type[0].name}>{poxymon.type[0].name}</div>
             <div className="main-stats">HP {poxymon.hp}</div>
           </div>
@@ -70,7 +55,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <button id="btn-generate" onClick={randomId}>Generate Poxymon!</button>
     </section>
   )
 }

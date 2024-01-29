@@ -1,15 +1,18 @@
 .container {
-  width: 100vw;
+  width: 100%;
 }
 
 .poxymon-list.row {
-  width: 100vw;
+  margin: 0;
 }
 
 a.poxymon-index {
   text-decoration: none;
   color: black;
-  width: 400px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 a.poxymon-index:hover {
   transform: scale(1.1);

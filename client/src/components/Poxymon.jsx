@@ -75,9 +75,9 @@ export default function Poxymon() {
                   className="poxymon-index"
                   as={Link}
                   key={poxymon.id}
-                  xs={6}
-                  md={4}
-                  lg={3}
+                  xs={12}
+                  md={6}
+                  lg={4}
                   to={`/poxymon/${poxymon.id}`}
                 >
                   <div className={poxymon.type[0].name} id="card" >

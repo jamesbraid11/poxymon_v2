@@ -1,0 +1,266 @@
+.card-container {
+  overflow: auto;
+  width: 330px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+#card {
+  margin: 10px 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+#card img {
+  display: block;
+  width: 250px;
+  max-height: 280px;
+  margin: 0 auto 0.7rem;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: #eff3ff;
+}
+
+// .hp {
+//   width: 80px;
+//   background-color: #ffffff;
+//   text-align: center;
+//   padding: 8px 0;
+//   border-radius: 30px;
+//   margin-left: auto;
+//   font-weight: 400;
+// }
+
+.poxymon-name {
+  text-align: center;
+  font-weight: 600;
+}
+
+.type {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  font-size: 14px;
+  color: #eff3ff;
+  text-shadow: 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black;
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 18px 0 0 0;
+  margin-bottom: 0.5rem;
+}
+
+.main-stats {
+  padding: 5px 10px;
+  margin: 0 10px;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #eff3ff;
+}
+
+#btn-generate {
+  display: block;
+  font-size: 18px;
+  position: relative;
+  margin: 20px auto;
+  color: #80ff00;
+  font-size: 1em;
+  padding: 5px 20px;
+  border: 2.5px solid #80ff00;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background-color: black;
+}
+
+#btn-generate:hover {
+  background-color: #80ff00;
+  color: black;
+  border: 2.5px solid black;
+}
+
+.moves-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  padding: 0 0 10px 0;
+}
+
+.move-types, .move-power {
+  text-align: center;
+}
+
+.moves {
+  margin: 10px 5px;
+  padding: 2px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  background-color: #eff3ff;
+}
+
+.move-type {
+  margin: 10px 5px;
+  padding: 2px 7px;
+  font-size: 14px;
+  border-radius: 20px;
+  border: 1.5px solid black;
+  color: #eff3ff;
+  text-shadow: 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black, 0 0 1.5px black;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.Fire {
+  background: linear-gradient(#EA7A3C60, #EA7A3C60), linear-gradient(white, white);
+}
+
+#Fire {
+  background-color: #EA7A3C;
+}
+
+.Bug {
+  background: linear-gradient(#94BC4A60, #94BC4A60), linear-gradient(white, white);
+}
+
+#Bug{
+  background-color: #94BC4A;
+}
+
+.Dragon {
+  background: linear-gradient(#6A7BAF60, #6A7BAF60), linear-gradient(white, white);
+}
+
+#Dragon {
+  background-color: #6A7BAF;
+}
+
+.Dark {
+  background: linear-gradient(#736C7560, #736C7560), linear-gradient(white, white);
+}
+
+#Dark {
+  background-color: #736C75;
+}
+
+.Electric {
+  background: linear-gradient(#E5C53160, #E5C53160), linear-gradient(white, white);
+}
+
+#Electric {
+  background-color: #E5C531;
+}
+
+.Fairy {
+  background: linear-gradient(#E397D160, #E397D160), linear-gradient(white, white);
+}
+
+#Fairy {
+  background-color: #E397D1;
+}
+
+.Fighting {
+  background: linear-gradient(#CB5F4860, #CB5F4860), linear-gradient(white, white);
+}
+
+#Fighting {
+  background-color: #CB5F48;
+}
+
+.Flying {
+  background: linear-gradient(#7DA6DE60, #7DA6DE60), linear-gradient(white, white);
+}
+
+#Flying {
+  background-color: #7DA6DE;
+}
+
+.Ghost {
+  background: linear-gradient(#846AB660, #846AB660), linear-gradient(white, white);
+}
+
+#Ghost {
+  background-color: #846AB6;
+}
+
+.Grass {
+  background: linear-gradient(#71C55860, #71C55860), linear-gradient(white, white);
+}
+
+#Grass {
+  background-color: #71C558;
+}
+
+.Ground {
+  background: linear-gradient(#CC9F4F60, #CC9F4F60), linear-gradient(white, white);
+}
+
+#Ground {
+  background-color: #CC9F4F;
+}
+
+.Ice {
+  background: linear-gradient(#70CBD460, #70CBD460), linear-gradient(white, white);
+}
+
+#Ice {
+  background-color: #70CBD4;
+}
+
+.Normal {
+  background: linear-gradient(#AAB09F60, #AAB09F60), linear-gradient(white, white);
+}
+
+#Normal {
+  background-color: #AAB09F;
+}
+
+.Poison {
+  background: linear-gradient(#B468B760, #B468B760), linear-gradient(white, white);
+}
+
+#Poison {
+  background-color: #B468B7;
+}
+
+.Psychic {
+  background: linear-gradient(#E5709B60, #E5709B60), linear-gradient(white, white);
+}
+
+#Psychic {
+  background-color: #E5709B;
+}
+
+.Rock {
+  background: linear-gradient(#B2A06160, #B2A06160), linear-gradient(white, white);
+}
+
+#Rock {
+  background-color: #B2A061;
+}
+
+.Steel {
+  background: linear-gradient(#89A1B060, #89A1B060), linear-gradient(white, white);
+}
+
+#Steel {
+  background-color: #89A1B0;
+}
+
+.Water {
+  background: linear-gradient(#539AE260, #539AE260), linear-gradient(white, white);
+}
+
+#Water {
+  background-color: #539AE2;
+}

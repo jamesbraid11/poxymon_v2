@@ -14,6 +14,9 @@ import PoxymonUpdate from './components/PoxymonUpdate'
 import ErrorPage from './components/ErrorPage'
 import Profile from './components/Profile'
 
+// Loaders
+import { getAllPoxymon } from './utils/loaders/poxymon'
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -22,7 +25,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />
+        element: <Home />,
+        loader: getAllPoxymon
       },
       {
         path: '/poxymon',

@@ -22,6 +22,12 @@ header {
   }
 }
 
+.modal-title {
+  color: #80ff00;
+  font-size: 60px;
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
+}
+
 svg {
   height: 30px;
   width: 40px;
@@ -67,7 +73,7 @@ li.nav-item {
 .nav-item {
   background-color: transparent;
 }
-.sign.in {
+.account {
   color: white;
 }
 button.btn-close {
@@ -87,7 +93,7 @@ li.nav-item {
   background: none;
 }
 a.nav-link:hover {
-  color: rgb(106, 5, 5);
+  color: #80ff00;
 }
 form.log_in {
   display: flex;
@@ -121,8 +127,7 @@ input {
   border-radius: 9px;
   display: block;
   height: 5vh;
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%
+  width: 100%;
 }
 
 .centered-modal {
@@ -153,22 +158,13 @@ nav {
   background-color: transparent;
 }
 .indexs {
-  width: 300px;
+  width: 100px;
   background-color: rgba(58,49,40,.65);
   backdrop-filter: blur(1px);
   background-color: transparent;
 }
 
-.btn-primary {
-  background: transparent;
-  border: none;
-}
-.btn.btn-danger {
-  margin-bottom: 10px;
-}
-.btn-primary:hover {
-  background-color: transparent;
-}
+
 
 .burger-menu {
   display: flex;
@@ -192,10 +188,22 @@ nav {
 }
 
 .user-icon {
-  color: #80ff00 !important;
-  height: 37px !important;
+  height: 37px;
 }
 
-button.icon.btn.btn-primary {
-  margin: auto 0px;
+.button {
+  color: #80ff00;
+  font-size: 1em;
+  padding: 5px 20px;
+  border: 2.5px solid #80ff00;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background-color: black;
+  margin: 5px 0;
+}
+.button:hover {
+  background-color: #80ff00;
+  color: black;
+  border: 2.5px solid black;
 }

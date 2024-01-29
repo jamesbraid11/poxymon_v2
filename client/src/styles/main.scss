@@ -2,6 +2,7 @@
 @import './components/Home.scss';
 @import './global/variables.scss';
 @import './components/Footer.scss';
+@import './components/Poxymon.scss';
 
 * {
   box-sizing: border-box;
@@ -11,4 +12,12 @@
 body {
   background-color: $very-light-green;
   margin: 0;
+}
+
+.centred {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }

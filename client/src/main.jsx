@@ -30,7 +30,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/poxymon',
-        element: <Poxymon />
+        element: <Poxymon />,
+        loader: getAllPoxymon
       },
       {
         path: '/poxymon/:poxymonId',

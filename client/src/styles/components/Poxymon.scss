@@ -1,0 +1,17 @@
+.container {
+  width: 100vw;
+}
+
+.poxymon-list.row {
+  width: 100vw;
+}
+
+a.poxymon-index {
+  text-decoration: none;
+  color: black;
+  width: 400px;
+}
+a.poxymon-index:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}

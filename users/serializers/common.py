@@ -33,4 +33,4 @@ class RegistrationSerializer(serializers.ModelSerializer):
 class PoxymonListUserSerializer(serializers.ModelSerializer):
   class Meta:
     model = User
-    fields = ['username']
+    fields = ['id', 'username']

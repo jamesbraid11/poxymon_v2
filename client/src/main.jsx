@@ -15,7 +15,10 @@ import ErrorPage from './components/ErrorPage'
 import Profile from './components/Profile'
 
 // Loaders
-import { getAllPoxymon, getSinglePoxymon } from './utils/loaders/poxymon'
+import { getAllPoxymon, getSinglePoxymon, getAllTypes } from './utils/loaders/poxymon'
+
+// Actions
+// import { createPoxymon } from './utils/actions/poxymon'
 
 const router = createBrowserRouter([
   {
@@ -40,7 +43,9 @@ const router = createBrowserRouter([
       },
       {
         path: '/poxymon/create',
-        element: <PoxymonCreate />
+        element: <PoxymonCreate />,
+        loader: getAllTypes,
+        // action: async ({ request }) => createPoxymon(request)
       },
       {
         path: '/poxymon/:pk/update',

@@ -1,4 +1,4 @@
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData, Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
       </div>
       <div className="card-container">
         <button id="btn-generate" onClick={randomId}>Discover Poxymon!</button>
-        <div className={poxymon.type[0].name} id="card">
+        <div className={poxymon.type[0].name} id="card"><Link to={`/poxymon/${poxymon.id}`}>
           <div className="stats">
             <div className="main-stats">SPE {poxymon.speed}</div>
             <div className="type" id={poxymon.type[0].name}>{poxymon.type[0].name}</div>
@@ -53,7 +53,7 @@ export default function Home() {
               <div className="moves">{poxymon.move_two_power}</div>
             </div>
           </div>
-        </div>
+          </Link></div>
       </div>
     </section>
   )

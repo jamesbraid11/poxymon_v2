@@ -4,7 +4,7 @@ export async function getAllPoxymon() {
   return res.json()
 }
 
-// export async function getSinglePoxymon(id){
-//   const res = await fetch(`/api/poxymon/${id}/`)
-//   return res.json()
-// }
+export async function getSinglePoxymon(pk){
+  const res = await fetch(`/api/poxymon/${pk}/`)
+  return res.json()
+}

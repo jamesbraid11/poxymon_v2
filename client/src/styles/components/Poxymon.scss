@@ -1,5 +1,6 @@
 .container {
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .poxymon-list.row {
@@ -15,6 +16,6 @@ a.poxymon-index {
   align-items: center;
 }
 a.poxymon-index:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
 }

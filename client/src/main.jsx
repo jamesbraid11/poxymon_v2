@@ -15,7 +15,7 @@ import ErrorPage from './components/ErrorPage'
 import Profile from './components/Profile'
 
 // Loaders
-import { getAllPoxymon } from './utils/loaders/poxymon'
+import { getAllPoxymon, getSinglePoxymon } from './utils/loaders/poxymon'
 
 const router = createBrowserRouter([
   {
@@ -34,15 +34,16 @@ const router = createBrowserRouter([
         loader: getAllPoxymon
       },
       {
-        path: '/poxymon/:poxymonId',
-        element: <PoxymonSingle />
+        path: '/poxymon/:pk',
+        element: <PoxymonSingle />,
+        loader: async ({ params }) => getSinglePoxymon(params.pk)
       },
       {
         path: '/poxymon/create',
         element: <PoxymonCreate />
       },
       {
-        path: '/poxymon/:poxymonId/update',
+        path: '/poxymon/:pk/update',
         element: <PoxymonUpdate />
       },
       {

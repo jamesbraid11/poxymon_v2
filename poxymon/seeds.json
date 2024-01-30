@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "name": "Instructor Ill",
-    "description": "This instructor poxymon struggles to regulate its body temperature; it is never completely warm. Working remotely helps to protect others from its many contaminations.",
+    "description": "This poison shrub poxymon struggles to regulate its body temperature; it is never completely warm. Working remotely helps to protect others from its many contaminations.",
     "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706273966/poxymon/instructor-ill_hrgthb.png",
     "hp": 150,
     "speed": 180,
@@ -17,6 +17,380 @@
     "creator": 1,
     "type": [
       7
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 2,
+  "fields": {
+    "name": "Cosy Combustor",
+    "description": "Cosy Combustor likes to be snug: it usually wears a beanie or hood over its head, or sometimes both! This, coupled with regularly guzzling hot drinks from a transparent mug, keeps its brain the consistency and temperature of hot liquid magma.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706450730/poxymon/cosy-combustor_as9vvh.png",
+    "hp": 190,
+    "speed": 140,
+    "move_one_name": "Volcanic Head Bash",
+    "move_one_type": 1,
+    "move_one_power": 100,
+    "move_two_name": "See My Tea",
+    "move_two_type": 2,
+    "move_two_power": 70,
+    "creator": 1,
+    "type": [
+      1
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 3,
+  "fields": {
+    "name": "Zappy Zilian",
+    "description": "Zappy Zilian is always boasting about its natural habitat, even when unintentional. It is so content there that when raging thunderstorms appear, it is still happy to sit right next to the window. This keeps it electrically charged.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706451022/poxymon/zappy-zilian_tx4pfu.png",
+    "hp": 160,
+    "speed": 170,
+    "move_one_name": "Iureka Discharge",
+    "move_one_type": 8,
+    "move_one_power": 90,
+    "move_two_name": "Coastal Rock Out",
+    "move_two_type": 10,
+    "move_two_power": 80,
+    "creator": 1,
+    "type": [
+      8
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 4,
+  "fields": {
+    "name": "Bloodclaat Bloodhound",
+    "description": "Born on road, or at least it says it was, this poxymon follows the path of the roadman. Despite this, it would still rather stare an opponent down than get into a fight.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706451326/poxymon/bloodclaat-bloodhound_kp96ro.png",
+    "hp": 165,
+    "speed": 175,
+    "move_one_name": "Roadman Roundhouse",
+    "move_one_type": 6,
+    "move_one_power": 70,
+    "move_two_name": "Serious Stare Out",
+    "move_two_type": 11,
+    "move_two_power": 70,
+    "creator": 1,
+    "type": [
+      6
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 5,
+  "fields": {
+    "name": "Rat Boy",
+    "description": "This grotesque poxymon was born out of the imagination of a non-fan of monster battling games. Finally grabbing the limelight, Rat Boy aims to use its speed to defeat opponents. Its attacks seriously lack punch though...",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706451862/poxymon/rat-boy_pxfkud.png",
+    "hp": 120,
+    "speed": 280,
+    "move_one_name": "Sorry Strike",
+    "move_one_type": 4,
+    "move_one_power": 50,
+    "move_two_name": "Poisonous Nibble",
+    "move_two_type": 7,
+    "move_two_power": 50,
+    "creator": 1,
+    "type": [
+      4
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 6,
+  "fields": {
+    "name": "Macabre Macaw",
+    "description": "This parrot poxymon is neither living nor dead, with mythology stating that one touch of its wing causes instant death. As you can imagine, it struggles to make friends...",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706452374/poxymon/macabre-macaw_wfadun.png",
+    "hp": 135,
+    "speed": 175,
+    "move_one_name": "Perishing Peck",
+    "move_one_type": 5,
+    "move_one_power": 95,
+    "move_two_name": "Wing of Death",
+    "move_two_type": 14,
+    "move_two_power": 95,
+    "creator": 1,
+    "type": [
+      5
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 7,
+  "fields": {
+    "name": "Overfamiliar Ferret",
+    "description": "Overfamiliar Ferret is always making people feel uncomfortable. It is a master at scuttling up to a group in conversation unnoticed, but the group then disperses very quickly.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706607586/poxymon/overfamiliar-ferret_pqsqrp.png",
+    "hp": 125,
+    "speed": 225,
+    "move_one_name": "Unwelcome Presence",
+    "move_one_type": 17,
+    "move_one_power": 80,
+    "move_two_name": "Scuttle Up",
+    "move_two_type": 4,
+    "move_two_power": 70,
+    "creator": 1,
+    "type": [
+      17
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 8,
+  "fields": {
+    "name": "Senile Sapling",
+    "description": "This young tree poxymon was born old. It has holes in its trunk, incontinence issues and faded leaves that often fall. It is really hoping this is a Benjamin Button type situation.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706607924/poxymon/senile-sapling_pe0sdb.png",
+    "hp": 145,
+    "speed": 175,
+    "move_one_name": "Jagged Branches",
+    "move_one_type": 3,
+    "move_one_power": 90,
+    "move_two_name": "Soiled",
+    "move_two_type": 9,
+    "move_two_power": 90,
+    "creator": 1,
+    "type": [
+      3
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 9,
+  "fields": {
+    "name": "Woeful Whale",
+    "description": "This giant whale poxymon is extremely sensitive; it doesn't take much to get its tear ducts flowing. Now sporting a perma-frown, Woeful Whale is ready to unleash its emotions on any opponent.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706608557/poxymon/woeful-whale_jwvwaf.png",
+    "hp": 250,
+    "speed": 120,
+    "move_one_name": "Teary Torrent",
+    "move_one_type": 2,
+    "move_one_power": 75,
+    "move_two_name": "Sad Slap",
+    "move_two_type": 6,
+    "move_two_power": 55,
+    "creator": 1,
+    "type": [
+      2
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 10,
+  "fields": {
+    "name": "Clairvoyant Carrot",
+    "description": "This animated carrot poxymon claims to be clairvoyant, but most people think this is a ruse created due to it having one giant eye. Strangely, it still has two eyebrows.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706609134/poxymon/clairvoyant-carrot_vej4lg.png",
+    "hp": 160,
+    "speed": 200,
+    "move_one_name": "False Future",
+    "move_one_type": 11,
+    "move_one_power": 70,
+    "move_two_name": "Rooted Reading",
+    "move_two_type": 3,
+    "move_two_power": 70,
+    "creator": 1,
+    "type": [
+      11
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 11,
+  "fields": {
+    "name": "Jacked Frost",
+    "description": "Lots of time in a deserted tundra means lots of time for working out. Jacked Frost pumps icy iron all day long. It is now quite the specimen of a poxymon, but its social skills leave a lot to be desired.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706609691/poxymon/jacked-frost_accnil.png",
+    "hp": 165,
+    "speed": 155,
+    "move_one_name": "Freezing Fist",
+    "move_one_type": 12,
+    "move_one_power": 90,
+    "move_two_name": "Dumbbell Donk",
+    "move_two_type": 15,
+    "move_two_power": 90,
+    "creator": 1,
+    "type": [
+      12
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 12,
+  "fields": {
+    "name": "Pebble Dasher",
+    "description": "This rock type poxymon spends all day polishing and nurturing its pebbles, they can become rather hot when sat on. Pebble Dasher will launch its pebbles at opponents when provoked, but then be very upset that its prized jewels are gone.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706610412/poxymon/pebble-dasher_znj272.png",
+    "hp": 205,
+    "speed": 125,
+    "move_one_name": "Pebble Pelt",
+    "move_one_type": 10,
+    "move_one_power": 100,
+    "move_two_name": "Hot Rocks",
+    "move_two_type": 1,
+    "move_two_power": 70,
+    "creator": 1,
+    "type": [
+      10
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 13,
+  "fields": {
+    "name": "Not Well Grounded",
+    "description": "This mud monster still dreams of becoming a model, despite having no clay in its makeup. This also leads to its body parts to regularly fall off while posing. Not Well Grounded will fire silt at anyone that tries to tarnish its fantasy.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706611053/poxymon/not-well-grounded_jayhns.png",
+    "hp": 145,
+    "speed": 195,
+    "move_one_name": "Salty Silt",
+    "move_one_type": 9,
+    "move_one_power": 80,
+    "move_two_name": "Desperate Dream",
+    "move_two_type": 18,
+    "move_two_power": 80,
+    "creator": 1,
+    "type": [
+      9
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 14,
+  "fields": {
+    "name": "Forgetful Fairy",
+    "description": "This odd looking fairy poxymon is extremely forgetful: its hovel is festooned with colourful reminders, but it can't remember what any of them mean. Don't cross Forgetful Fairy though, there is a nasty surprise waiting for those struck by her wand.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706611432/poxymon/forgetful-fairy_kjuj8p.png",
+    "hp": 130,
+    "speed": 210,
+    "move_one_name": "Abra Ca-something",
+    "move_one_type": 18,
+    "move_one_power": 80,
+    "move_two_name": "Taser Wand",
+    "move_two_type": 8,
+    "move_two_power": 80,
+    "creator": 1,
+    "type": [
+      18
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 15,
+  "fields": {
+    "name": "Super Lame Robot",
+    "description": "Super Lame Robot was not well built and does not seem to perform any useful functions. After years of wandering around slowly and aimlessly, many insects have set up digs in its torso.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706611846/poxymon/super-lame-robot_ocuvo1.png",
+    "hp": 245,
+    "speed": 115,
+    "move_one_name": "Pathetic Punch",
+    "move_one_type": 15,
+    "move_one_power": 70,
+    "move_two_name": "Bug Back Up",
+    "move_two_type": 13,
+    "move_two_power": 70,
+    "creator": 1,
+    "type": [
+      15
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 16,
+  "fields": {
+    "name": "Suspicious Spectre",
+    "description": "Probably just a person in a costume.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706612107/poxymon/suspicious-spectre_c9oksj.png",
+    "hp": 160,
+    "speed": 170,
+    "move_one_name": "Boo!",
+    "move_one_type": 14,
+    "move_one_power": 90,
+    "move_two_name": "Rope Hoist",
+    "move_two_type": 5,
+    "move_two_power": 80,
+    "creator": 1,
+    "type": [
+      14
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 17,
+  "fields": {
+    "name": "Puff On This",
+    "description": "This dragon poxymon loves to vape. It won't quit despite the fact that its jaw is now rotting away. Puff On This produces humungous vape clouds that can damage opponents.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706612494/poxymon/puff-on-this_joqefp.png",
+    "hp": 185,
+    "speed": 135,
+    "move_one_name": "Scaly Tail",
+    "move_one_type": 16,
+    "move_one_power": 90,
+    "move_two_name": "Billowing Cloud",
+    "move_two_type": 16,
+    "move_two_power": 90,
+    "creator": 1,
+    "type": [
+      16
+    ],
+    "likes": []
+  }
+},
+{
+  "model": "poxymon.poxymon",
+  "pk": 18,
+  "fields": {
+    "name": "Delinquent Dragonfly",
+    "description": "Throughout cities that it visits, Delinquent Dragonfly leaves a trail of revered street art, not that the authorities would agree... This poxymon loves watching old kung fu films, but it is not very good at replicating the moves.",
+    "image": "https://res.cloudinary.com/dfq6eapjp/image/upload/v1706613054/poxymon/delinquent-dragonfly_k1i7wc.png",
+    "hp": 145,
+    "speed": 195,
+    "move_one_name": "Artful Spores",
+    "move_one_type": 13,
+    "move_one_power": 100,
+    "move_two_name": "Enter The Dragon",
+    "move_two_type": 16,
+    "move_two_power": 60,
+    "creator": 1,
+    "type": [
+      13
     ],
     "likes": []
   }

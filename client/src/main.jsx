@@ -13,6 +13,7 @@ import PoxymonCreate from './components/PoxymonCreate'
 import PoxymonUpdate from './components/PoxymonUpdate'
 import ErrorPage from './components/ErrorPage'
 import Profile from './components/Profile'
+import Battle from './components/Battle'
 
 // Loaders
 import { getAllPoxymon, getSinglePoxymon, getAllTypes } from './utils/loaders/poxymon'
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: '/profile',
         element: <Profile />
+      },
+      {
+        path: '/battle',
+        element: <Battle />
       }
     ]
   }

@@ -23,7 +23,7 @@ export default function ImageUploadField({ image, setImage }) {
     <>
       <img className="uploaded-image" src={image} alt="Poxymon Image (transparent background desirable)" />
       <input type="hidden" name="image" value={image} className="imageUpload" />
-      <input className="upload-input" type="file" onChange={handleImageUpload} />
+      <input className="upload-input create-input" type="file" onChange={handleImageUpload} />
     </>
   )
 }

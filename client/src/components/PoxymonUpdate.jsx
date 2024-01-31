@@ -101,7 +101,7 @@ export default function PoxymonCreate() {
       <Container className="create-container">
         <Form className="create-form" method="POST">
           <label htmlFor="name">Name</label>
-          <input type="text" name="name" defaultValue={poxymon.name} />
+          <input className="create-input" type="text" name="name" defaultValue={poxymon.name} />
           <div className="create-image">
             <ImageUploadField image={image} setImage={setImage} />
           </div>
@@ -112,7 +112,7 @@ export default function PoxymonCreate() {
           <div className="create-stats-container">
             <div className="create-stats">
               <label htmlFor="type">Type</label>
-              <select className="stat-input" name="type" defaultValue={poxymon.type.id}>
+              <select className="stat-input create-input" name="type" defaultValue={poxymon.type.id}>
                 {types.map(type => {
                   return <option key={type.id} value={type.id}>{type.name}</option>
                 })}
@@ -120,25 +120,25 @@ export default function PoxymonCreate() {
             </div>
             <div className="create-stats">
               <label htmlFor="speed">Speed (min 100)</label>
-              <input className="stat-input" type="number" name="speed" defaultValue={poxymon.speed} />
+              <input className="stat-input create-input" type="number" name="speed" defaultValue={poxymon.speed} />
             </div>
             <div className="create-stats">
               <label htmlFor="hp">HP (min 100)</label>
-              <input className="stat-input" type="number" name="hp" defaultValue={poxymon.hp} />
+              <input className="stat-input create-input" type="number" name="hp" defaultValue={poxymon.hp} />
             </div>
           </div>
           <div className="create-move">
             <div className="create-stats-name">
               <label htmlFor="move_one_name">Move Name</label>
-              <input className="move-name-input" type="text" name="move_one_name" defaultValue={poxymon.move_one_name} />
+              <input className="move-name-input create-input" type="text" name="move_one_name" defaultValue={poxymon.move_one_name} />
             </div>
             <div className="create-stats">
               <label htmlFor="move_one_power">Power (max 100)</label>
-              <input className="stat-input" type="number" name="move_one_power" defaultValue={poxymon.move_one_power} />
+              <input className="stat-input create-input" type="number" name="move_one_power" defaultValue={poxymon.move_one_power} />
             </div>
             <div className="create-stats">
               <label htmlFor="move_one_type">Type</label>
-              <select className="stat-input" name="move_one_type" defaultValue={poxymon.move_one_type.id}>
+              <select className="stat-input create-input" name="move_one_type" defaultValue={poxymon.move_one_type.id}>
                 {types.map(type => {
                   return <option key={type.id} value={type.id}>{type.name}</option>
                 })}
@@ -148,15 +148,15 @@ export default function PoxymonCreate() {
           <div className="create-move">
             <div className="create-stats-name">
               <label htmlFor="move_two_name">Move Name</label>
-              <input className="move-name-input" type="text" name="move_two_name" defaultValue={poxymon.move_two_name} />
+              <input className="move-name-input create-input" type="text" name="move_two_name" defaultValue={poxymon.move_two_name} />
             </div>
             <div className="create-stats">
               <label htmlFor="move_two_power">Power (max 100)</label>
-              <input className="stat-input" type="number" name="move_two_power" defaultValue={poxymon.move_two_power} />
+              <input className="stat-input create-input" type="number" name="move_two_power" defaultValue={poxymon.move_two_power} />
             </div>
             <div className="create-stats">
               <label htmlFor="move_two_type">Type</label>
-              <select className="stat-input" name="move_two_type" defaultValue={poxymon.move_two_type.id}>
+              <select className="stat-input create-input" name="move_two_type" defaultValue={poxymon.move_two_type.id}>
                 {types.map(type => {
                   return <option key={type.id} value={type.id}>{type.name}</option>
                 })}

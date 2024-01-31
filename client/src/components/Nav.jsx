@@ -69,13 +69,13 @@ export default function Nav() {
           <div className="icon" onClick={toggleModal}>
             <FaRegUserCircle fill="#80ff00" className="user-icon" />
           </div>
-          <header className='p-2 p-md-3 p-lg-4'>
+          <div className="burger">
             <button className='nav-toggle' onClick={() => setShow(true)} >
               <span></span>
               <span></span>
               <span></span>
             </button>
-          </header>
+          </div>
         </div>
 
           <Modal show={show} fullscreen={false} onHide={() => setShow(false)} className='index'>

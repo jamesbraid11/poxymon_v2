@@ -27,7 +27,7 @@ export default function PoxymonSingle() {
             <div className="single-description">
               <p className="description">{poxymon.description}</p>
             </div>
-            <div className={poxymon.type[0].name} id="stats-and-moves">
+            <div className={poxymon.type.name} id="stats-and-moves">
               <div className="single-stats-container">
                 <div className="single-stats">Speed<br></br><span className="stats moves">{poxymon.speed}</span></div>
                 <div className="single-stats">HP<br></br><span className="stats moves">{poxymon.hp}</span></div>
@@ -53,7 +53,7 @@ export default function PoxymonSingle() {
             <div className="type-and-weaknesses">
               <div className="single-type">
                 <p className="type-text">Type:</p>
-                <div className="move-type" id={poxymon.type[0].name}>{poxymon.type[0].name}</div>
+                <div className="move-type" id={poxymon.type.name}>{poxymon.type.name}</div>
               </div>
               <div className="weaknesses">
                 <p className="type-text">Weaknesses:</p>

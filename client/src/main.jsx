@@ -18,7 +18,7 @@ import Profile from './components/Profile'
 import { getAllPoxymon, getSinglePoxymon, getAllTypes } from './utils/loaders/poxymon'
 
 // Actions
-import { createPoxymon } from './utils/actions/poxymon'
+import { createPoxymon, updateOrDeletePoxymon } from './utils/actions/poxymon'
 
 const router = createBrowserRouter([
   {
@@ -49,7 +49,9 @@ const router = createBrowserRouter([
       },
       {
         path: '/poxymon/:pk/update',
-        element: <PoxymonUpdate />
+        element: <PoxymonUpdate />,
+        loader: async ({ params }) => getSinglePoxymon(params.pk),
+        action: async ({ request, params }) => updateOrDeletePoxymon(request, params.pk)
       },
       {
         path: '/profile',

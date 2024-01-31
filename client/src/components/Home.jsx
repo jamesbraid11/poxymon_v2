@@ -28,10 +28,10 @@ export default function Home() {
       </div>
       <div className="card-container">
         <button id="btn-generate" onClick={randomId}>Discover Poxymon!</button>
-        <div className={poxymon.type[0].name} id="card"><Link to={`/poxymon/${poxymon.id}`}>
+        <div className={poxymon.type.name} id="card"><Link to={`/poxymon/${poxymon.id}`}>
           <div className="stats">
             <div className="main-stats">SPE {poxymon.speed}</div>
-            <div className="type" id={poxymon.type[0].name}>{poxymon.type[0].name}</div>
+            <div className="type" id={poxymon.type.name}>{poxymon.type.name}</div>
             <div className="main-stats">HP {poxymon.hp}</div>
           </div>
           <h3 className="poxymon-name">{poxymon.name}</h3>

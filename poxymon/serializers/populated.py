@@ -7,6 +7,6 @@ class PoxymonListSerializer(PoxymonSerializer):
   creator = PoxymonListUserSerializer()
   likes = PoxymonListUserSerializer(many=True)
   reviews = ReviewSerializer(many=True)
-  type = TypeSerializer(many=True)
+  type = TypeSerializer()
   move_one_type = TypeSerializer()
   move_two_type = TypeSerializer()

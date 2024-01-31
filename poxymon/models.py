@@ -5,8 +5,9 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 class Poxymon(models.Model):
   name = models.CharField(max_length=50)
   description = models.TextField(max_length=500)
-  type = models.ManyToManyField(
+  type = models.ForeignKey(
     to='poxymon_types.Type',
+    on_delete=models.PROTECT,
     related_name='poxymon'
   )
   image = models.CharField()

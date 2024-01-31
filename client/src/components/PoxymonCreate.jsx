@@ -16,7 +16,7 @@ export default function PoxymonCreate() {
     if (res?.status === 201) {
       console.log('CREATED SUCCESSFULLY')
       console.log(res)
-      navigate(`/poxymon/${res.data.id}`)
+      navigate(`/poxymon/${res.data.id}/`)
     }
   }, [res, navigate])
 
@@ -29,51 +29,69 @@ export default function PoxymonCreate() {
           <input type="text" name="name" />
           <div className="create-image">
             <ImageUploadField image={image} setImage={setImage} />
+          </div>
+          <div className="description-container">
             <label htmlFor="description">Description</label>
             <textarea name="description"></textarea>
           </div>
-          <div className="create-stats">
-            <label htmlFor="speed">Speed (min 100)</label>
-            <input type="number" name="speed" />
-            <label htmlFor="type">Type</label>
-            <select name="type">
-              {types.map(type => {
-                return <option key={type.id} value={type.id}>{type.name}</option>
-              })}
-            </select>
-            <label htmlFor="hp">HP (min 100)</label>
-            <input type="number" name="hp" />
+          <div className="create-stats-container">
+            <div className="create-stats">
+              <label htmlFor="type">Type</label>
+              <select className="stat-input" name="type">
+                {types.map(type => {
+                  return <option key={type.id} value={type.id}>{type.name}</option>
+                })}
+              </select>
+            </div>
+            <div className="create-stats">
+              <label htmlFor="speed">Speed (min 100)</label>
+              <input className="stat-input" type="number" name="speed" />
+            </div>
+            <div className="create-stats">
+              <label htmlFor="hp">HP (min 100)</label>
+              <input className="stat-input" type="number" name="hp" />
+            </div>
           </div>
-          <div className="create-moves">
-            <div className="create-move-one">
+          <div className="create-move">
+            <div className="create-stats-name">
               <label htmlFor="move_one_name">Move Name</label>
-              <input type="text" name="move_one_name" />
-              <label htmlFor="move_one_power">Power (max 100)</label>
-              <input type="number" name="move_one_power" />
-              <label htmlFor="move_one_type">Type</label>
-              <select name="move_one_type">
-                {types.map(type => {
-                  return <option key={type.id} value={type.id}>{type.name}</option>
-                })}
-              </select>
+              <input className="move-name-input" type="text" name="move_one_name" />
             </div>
-            <div className="create-move-two">
-            <label htmlFor="move_two_name">Move Name</label>
-              <input type="text" name="move_two_name" />
-              <label htmlFor="move_two_power">Power (max 100)</label>
-              <input type="number" name="move_two_power" />
-              <label htmlFor="move_two_type">Type</label>
-              <select name="move_two_type">
+            <div className="create-stats">
+              <label htmlFor="move_one_power">Power (max 100)</label>
+              <input className="stat-input" type="number" name="move_one_power" />
+            </div>
+            <div className="create-stats">
+              <label htmlFor="move_one_type">Type</label>
+              <select className="stat-input" name="move_one_type">
                 {types.map(type => {
                   return <option key={type.id} value={type.id}>{type.name}</option>
                 })}
               </select>
             </div>
           </div>
-          <button className="button" type="submit">Create poxymon</button>
+          <div className="create-move">
+            <div className="create-stats-name">
+              <label htmlFor="move_two_name">Move Name</label>
+              <input className="move-name-input" type="text" name="move_two_name" />
+            </div>
+            <div className="create-stats">
+              <label htmlFor="move_two_power">Power (max 100)</label>
+              <input className="stat-input" type="number" name="move_two_power" />
+            </div>
+            <div className="create-stats">
+              <label htmlFor="move_two_type">Type</label>
+              <select className="stat-input" name="move_two_type">
+                {types.map(type => {
+                  return <option key={type.id} value={type.id}>{type.name}</option>
+                })}
+              </select>
+            </div>
+          </div>
+          <button className="button" id="create-submit-btn" type="submit">Create Poxymon</button>
           {res?.data?.message && <p className='danger bold mt-4'>{res.data.message}</p>}
         </Form>
-      </Container>
+      </Container >
     </>
   )
 }

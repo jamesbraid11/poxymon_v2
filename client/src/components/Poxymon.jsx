@@ -32,12 +32,12 @@ export default function Poxymon() {
     // Update display of shown characters by name according to keys typed by user AND any dropdown selected by their house
     const pattern = new RegExp(filters.search, 'i')
     const filteredArray = allPoxymon.filter(poxymon => {
-      return pattern.test(poxymon.name) && (poxymon.type[0].name === filters.type || filters.type === 'All')
+      return pattern.test(poxymon.name) && (poxymon.type.name === filters.type || filters.type === 'All')
     })
     setFilteredPoxymon(filteredArray)
     // Update dropdown houses options by collating them from fetched data
     if (allPoxymon.length > 0 && types.length === 0) {
-      const typesArr = [...new Set(allPoxymon.map(poxymon => poxymon.type[0].name))].filter(Boolean)
+      const typesArr = [...new Set(allPoxymon.map(poxymon => poxymon.type.name))].filter(Boolean)
       setTypes(typesArr)
     }
   }, [filters])
@@ -49,7 +49,7 @@ export default function Poxymon() {
           <Col xs={6} md={4} lg={3}>
             <div className="custom-select">
               {/* Dropdown menu */}
-              <select id="dropdown" name="type" value={filters.type[0].name} onChange={handleChange}>
+              <select id="dropdown" name="type" value={filters.type.name} onChange={handleChange}>
                 <option value="All">All</option>
                 {types.length > 0 &&
                   types.map(type => {
@@ -80,10 +80,10 @@ export default function Poxymon() {
                   lg={4}
                   to={`/poxymon/${poxymon.id}`}
                 >
-                  <div className={poxymon.type[0].name} id="card" >
+                  <div className={poxymon.type.name} id="card" >
                     <div className="stats">
                       <div className="main-stats">SPE {poxymon.speed}</div>
-                      <div className="type" id={poxymon.type[0].name}>{poxymon.type[0].name}</div>
+                      <div className="type" id={poxymon.type.name}>{poxymon.type.name}</div>
                       <div className="main-stats">HP {poxymon.hp}</div>
                     </div>
                     <h3 className="poxymon-name">{poxymon.name}</h3>

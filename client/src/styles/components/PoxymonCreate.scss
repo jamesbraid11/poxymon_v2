@@ -1,0 +1,60 @@
+
+.poxymon-create {
+  text-align: center;
+  margin-top: 10px;
+}
+
+input {
+  margin: 0 0 6px 0;
+  height: 50px;
+  width: 480px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.uploaded-image {
+  width: 480px;
+  margin-bottom: 6px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  width: 820px;
+}
+
+.create-stats-container {
+  display: flex;
+}
+
+.create-stats {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  width: 160px;
+}
+
+.stat-input {
+  width: 140px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.create-move {
+  display: flex;
+}
+
+.move-name-input {
+  margin-right: 30px;
+}
+
+#create-submit-btn {
+  margin: 20px;
+}

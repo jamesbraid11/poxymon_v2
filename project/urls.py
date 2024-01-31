@@ -22,5 +22,5 @@ urlpatterns = [
     path('api/auth/', include('users.urls')),
     path('api/poxymon/', include('poxymon.urls')),
     path('reviews/', include('reviews.urls')),
-    path('types/', include('poxymon_types.urls'))
+    path('api/types/', include('poxymon_types.urls'))
 ]

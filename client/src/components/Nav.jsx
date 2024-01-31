@@ -54,11 +54,10 @@ export default function Nav() {
   async function submitLogin(e) {
     e.preventDefault()
     const res = await loginUser(loginData)
-    console.log(res)
     if (res.status === 200) {
       console.log('LOGIN SUCCESSFUL')
       setLoginModalShow(false)
-      setToken(res.data.token)
+      setToken(res.data.access)
     }
   }
 

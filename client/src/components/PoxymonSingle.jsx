@@ -1,5 +1,5 @@
 import { useLoaderData, Link } from "react-router-dom"
-// import { activeUser } from '../utils/helpers/common'
+import { activeUser } from '../utils/helpers/common'
 
 export default function PoxymonSingle() {
 
@@ -17,9 +17,9 @@ export default function PoxymonSingle() {
             <img className="single-image" src={poxymon.image} alt="poxymon-image" />
             <div className="btn-container">
               <Link to={'/poxymon'} className="button back-btn">Back</Link>
-              {/* {activeUser() === poxymon.creator.id &&
+              {activeUser() === poxymon.creator.id &&
                 <Link to={`/poxymon/${poxymon.id}/update`} className="button">Update/Delete</Link>
-              } */}
+              }
             </div>
           </div>
           <div className="single-info-container">

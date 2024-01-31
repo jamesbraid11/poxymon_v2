@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       {
         path: '/poxymon/create',
         element: <PoxymonCreate />,
-        loader: getAllTypes,
+        loader: getAllTypes
         // action: async ({ request }) => createPoxymon(request)
       },
       {

@@ -10,7 +10,7 @@ export async function getSinglePoxymon(pk){
 }
 
 export async function getAllTypes() {
-  const res = await fetch('/types/')
-  console.log(res)
+  const res = await fetch('/api/types/')
+  setTimeout(console.log(res), 5000)
   return res.json()
 }

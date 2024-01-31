@@ -20,17 +20,20 @@ export function removeToken(){
 
 // This function decodes the JWT in localstorage
 export function activeUser() {
+  console.log('ACTIVE USER CALLED')
   // Get token from localstorage
   const token = getToken()
   // If the token does not exist, will return null
-  if (!token) return null
+  if (token === 'undefined') return null
+  console.log(token)
   // If the token exists, decode, validate expiry date, return the payload.sub
   const b64 = token.split('.')[1]
   const payload = JSON.parse(atob(b64))
+  console.log(payload)
   // Validate expiry date (payload.exp) by checking the number is greater than the date right now
   const now = Date.now() / 1000
   const exp = payload.exp
   if (exp > now) {
-    return payload.sub
+    return payload.user_id
   }
 }

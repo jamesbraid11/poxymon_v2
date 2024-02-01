@@ -18,6 +18,8 @@ import environ
 
 import os
 
+import django_on_heroku
+
 env = environ.Env()
 environ.Env.read_env()
 
@@ -159,3 +161,5 @@ ROOT_URLCONF = 'project.urls'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'client', "dist"),
 )
+
+django_on_heroku.settings(locals())

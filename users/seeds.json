@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$720000$yeNDQ38yAtxsilglY54gKC$Od7+U6M1+5E+OTdfb75la3AA+mq5UDe2X3hKehPmf7k=",
-    "last_login": "2024-01-24T19:32:51.537Z",
+    "last_login": "2024-01-26T14:24:33.791Z",
     "is_superuser": true,
     "username": "james",
     "first_name": "",
@@ -52,6 +52,25 @@
     "is_active": true,
     "date_joined": "2024-01-24T16:27:25.398Z",
     "bio": "Hello World",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$mVtrTzXaeQjwxF33jQgG7h$D0GFFV3QehKIgWlS1VpqHBT6wXI9kkSb0x2TyhdV4aQ=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "chip",
+    "first_name": "",
+    "last_name": "",
+    "email": "chip@email.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-01-27T22:28:18.151Z",
+    "bio": null,
     "groups": [],
     "user_permissions": []
   }

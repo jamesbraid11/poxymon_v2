@@ -23,7 +23,7 @@ export function activeUser() {
   // Get token from localstorage
   const token = getToken()
   // If the token does not exist, will return null
-  if (token === 'undefined') return null
+  if (!token || token === 'undefined') return null
   // If the token exists, decode, validate expiry date, return the payload.sub
   const b64 = token.split('.')[1]
   const payload = JSON.parse(atob(b64))

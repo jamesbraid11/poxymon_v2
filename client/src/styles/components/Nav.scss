@@ -11,7 +11,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 450px;
+  height: 380px;
   box-sizing: border-box;
   background: rgba(58, 49, 40, .65);
   border-radius: 12px;
@@ -19,11 +19,6 @@
   padding: 8px;
   width: 100%;
 }
-
-.create {
-  width: 450px;
-}
-
 
 .modal-header {
   border: none;
@@ -79,7 +74,7 @@ a.nav-link:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 350px;
+  height: 380px;
   box-sizing: border-box;
   background: rgba(58, 49, 40, .65);
   border-radius: 12px;
@@ -107,7 +102,7 @@ input {
   border-radius: 9px;
   display: block;
   height: 5vh;
-  width: 100%;
+  width: 80%;
 }
 
 .centered-modal {
@@ -156,10 +151,7 @@ input {
 
 .index {
   width: 200px;
-  background-color: rgba(58, 49, 40, .65);
-  // backdrop-filter: blur(1px);
-  background-color: transparent;
-  align-items: right;
+  background-color: #458900;
 }
 
 .burger-menu {

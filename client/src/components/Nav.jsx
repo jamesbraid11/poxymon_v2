@@ -67,17 +67,8 @@ export default function Nav() {
       <div className='navbar'>
         <div className="header-title"><Link to='/'></Link></div>
         <div className="header-menu">
-
             <FaRegUserCircle fill="#80ff00" className="user-icon login-icon" onClick={toggleModal}/>
-
-
             <IoMenu className='nav-toggle user-icon menu-icon' onClick={() => setShow(true)} />
-            {/* <button className='nav-toggle' onClick={() => setShow(true)} >
-              <span></span>
-              <span></span>
-              <span></span>
-            </button> */}
-
         </div>
 
         <Modal show={show} fullscreen={false} onHide={() => setShow(false)} className='index'>

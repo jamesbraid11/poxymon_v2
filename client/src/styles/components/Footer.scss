@@ -11,20 +11,27 @@ footer {
   background-color: #458900;
   text-align: center;
 }
-path {
-  color: #80ff00;
-}
+
 .footer-title {
   color: #80ff00;
   font-size: 18px;
   margin-bottom: 0;
-  margin-left: 10px;
-}
-svg {
-  height: 20px;
+  margin-left: 12px;
 }
 
 .github-link {
   color: #80ff00;
   text-decoration: underline;
+}
+
+.footer-icon {
+  height: 3vh;
+  width: 2.5vw;
+  color: #80ff00
+}
+
+.github-icon {
+  height: 3vh;
+  width: 2.5vw;
+  color: #80ff00
 }

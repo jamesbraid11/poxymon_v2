@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 import Modal from 'react-bootstrap/Modal'
 import { FaRegUserCircle } from "react-icons/fa"
+import { IoMenu } from "react-icons/io5";
 
 import { setToken } from '../utils/helpers/common'
 import { registerUser, loginUser } from '../utils/actions/auth'
@@ -65,89 +66,90 @@ export default function Nav() {
     <>
       <div className='navbar'>
         <div className="header-title"><Link to='/'></Link></div>
-        <div className="header-menus">
-          <div className="icon" onClick={toggleModal}>
-            <FaRegUserCircle fill="#80ff00" className="user-icon" />
-          </div>
-          <div className="burger">
-            <button className='nav-toggle' onClick={() => setShow(true)} >
+        <div className="header-menu">
+
+            <FaRegUserCircle fill="#80ff00" className="user-icon login-icon" onClick={toggleModal}/>
+
+
+            <IoMenu className='nav-toggle user-icon menu-icon' onClick={() => setShow(true)} />
+            {/* <button className='nav-toggle' onClick={() => setShow(true)} >
               <span></span>
               <span></span>
               <span></span>
-            </button>
-          </div>
+            </button> */}
+
         </div>
 
-          <Modal show={show} fullscreen={false} onHide={() => setShow(false)} className='index'>
-            <Modal.Header closeButton>
-            </Modal.Header>
-            <nav onClick={() => setShow(false)}>
-              <ul className='burger-menu nav nav-underline'>
-                <li className='nav-item'>
-                  <Link to='/' className='nav-link' >Home</Link>&nbsp;
-                </li>
-                <li className='nav-item'>
-                  <Link to='/poxymon' className='nav-link'>Poxymon</Link>&nbsp;
-                </li>
-                <li className='nav-item'>
-                  <Link to='/poxymon/create' className='nav-link'>Create Poxymon</Link>&nbsp;
-                </li>
-                <li className='nav-item'>
-                  <Link to='/battle' className='nav-link'>Battle</Link>&nbsp;
-                </li>
-                <li className='nav-item'>
-                  <Link to='/profile' className='nav-link'>Profile</Link>&nbsp;
-                </li>
-              </ul>
-            </nav>
-          </Modal>
-
-        <Modal show={modalShow} halfscreen="true" onHide={() => setModalShow(false)} className='centered-modal'>
+        <Modal show={show} fullscreen={false} onHide={() => setShow(false)} className='index'>
           <Modal.Header closeButton>
           </Modal.Header>
-          <Modal.Body>
+          <nav className="main-menu" onClick={() => setShow(false)}>
+            <ul className='burger-menu nav nav-underline'>
+              <li className='nav-item'>
+                <Link to='/' className='nav-link' >Home</Link>&nbsp;
+              </li>
+              <li className='nav-item'>
+                <Link to='/poxymon' className='nav-link'>Poxymon</Link>&nbsp;
+              </li>
+              <li className='nav-item'>
+                <Link to='/poxymon/create' className='nav-link'>Create Poxymon</Link>&nbsp;
+              </li>
+              <li className='nav-item'>
+                <Link to='/battle' className='nav-link'>Battle</Link>&nbsp;
+              </li>
+              <li className='nav-item'>
+                <Link to='/profile' className='nav-link'>Profile</Link>&nbsp;
+              </li>
+            </ul>
+          </nav>
+        </Modal>
+
+        <Modal centered show={modalShow} onHide={() => setModalShow(false)} className='centered-modal'>
+          <Modal.Header closeButton>
+          </Modal.Header>
+          <Modal.Body className='login-modal-body'>
             <form className='create'>
               <h1 className='modal-title'>Register</h1>
               <input type='text' name='username' placeholder='Username...' onChange={handleChange} />
               <input type='email' name='email' placeholder='Email...' onChange={handleChange} />
               <input type='password' name='password' placeholder='Password...' onChange={handleChange} />
               <input type='password' name='password_confirmation' placeholder='Confirm Password...' onChange={handleChange} />
-              <button className='button' type='submit' onClick={submitRegistration}>Register</button>
+              <button className='button' id='login-button' type='submit' onClick={submitRegistration}>Register</button>
               {/* Below will return a message to user if username taken, etc. Need to set this up. */}
               {/* {res && <p className='danger'>{res.data.message}</p>} */}
-              <div className='account'>
+              <p className='account'>
                 Already have an account?  &nbsp;
-                <button type="button" className="button" onClick={() => {
+                <span type="button" className="login-switch" onClick={() => {
                   setModalShow(false) // Close signup modal if open
                   setLoginModalShow(true) // Open login modal
                 }}>
                   Login
-                </button>
-              </div>
+                </span>
+              </p>
             </form>
           </Modal.Body>
         </Modal>
 
-        <Modal show={loginModalShow} halfscreen="true" onHide={() => setLoginModalShow(false)} className='centered-modal'>
+        <Modal centered show={loginModalShow} onHide={() => setLoginModalShow(false)} className='centered-modal'>
           <Modal.Header closeButton>
           </Modal.Header>
-          <Modal.Body>
-            <form className='log_in'>
+          <Modal.Body className='login-modal-body'>
+            <form className='login'>
               <h2 className='modal-title'>Login</h2>
               <input type='text' name='username' placeholder='Username...' onChange={handleLoginChange} />
               <input type='password' name='password' placeholder='Password...' onChange={handleLoginChange} />
-              <button className='button' type='submit' onClick={submitLogin}>Login</button>
+              <button className='button' id="login-button" type='submit' onClick={submitLogin}>Login</button>
               {/* Add message on server side to inform  visitor to login if haven't or other errors?*/}
               {/* {res?.data?.message && <p className='danger bold mt-4'>{res.data.message}</p>} */}
-              <div className='account'>
+              <p className='account'>
                 No account yet?   &nbsp;
-                <button type="button" className="button" onClick={() => {
+                <span type="button" className="login-switch" onClick={() => {
                   setModalShow(true)
                   setLoginModalShow(false)
                 }}>
                   Register
-                </button>
-              </div>
+                </span>
+              </p>
             </form>
           </Modal.Body>
         </Modal>

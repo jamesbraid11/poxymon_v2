@@ -9,13 +9,13 @@ export default function Footer() {
     <footer>
       <p className='footer-title'>&copy;Poxymon</p>
       <div className="github">
-        <FaGithub />Created by <span><a href='https://github.com/jamesbraid11' className="github-link">James Braid</a></span>
+        <FaGithub className='github-icon'/>Created by <span><a href='https://github.com/jamesbraid11' className="github-link">James Braid</a></span>
       </div>
       <div className='socials'>
-        <a href='https://www.instagram.com' className='footer-icon'><FaInstagram /></a>
+        <a href='https://www.instagram.com' ><FaInstagram className='footer-icon'/></a>
         {/* <a href='#' className='social-icons'><TiSocialFacebookCircular /></a> */}
-        <a href='https://www.facebook.com' className='footer-icon'><TiSocialFacebook /></a>
-        <a href='https://twitter.com' className='footer-icon'><FaXTwitter /></a>
+        <a href='https://www.facebook.com'><TiSocialFacebook className='footer-icon'/></a>
+        <a href='https://twitter.com'><FaXTwitter className='footer-icon'/></a>
       </div>
     </footer>
   )

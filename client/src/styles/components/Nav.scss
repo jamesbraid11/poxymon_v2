@@ -11,11 +11,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 380px;
+  height: 390px;
   box-sizing: border-box;
   background: rgba(58, 49, 40, .65);
   border-radius: 12px;
-  max-width: 400px;
+  max-width: 350px;
   padding: 8px;
   width: 100%;
 }
@@ -74,11 +74,11 @@ a.nav-link:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 380px;
+  height: 290px;
   box-sizing: border-box;
   background: rgba(58, 49, 40, .65);
   border-radius: 12px;
-  max-width: 400px;
+  max-width: 350px;
   padding: 8px;
   width: 100%;
 }
@@ -152,6 +152,15 @@ input {
 .index {
   width: 200px;
   background-color: #458900;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: right;
+  // justify-content: right;
+  // position: fixed;
+  // transform: translate(-50%, -50%);
+  // margin-top: 40%;
+  // margin-left: 92%;
+
 }
 
 .burger-menu {

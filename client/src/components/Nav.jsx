@@ -96,8 +96,6 @@ export default function Nav() {
         </Modal>
 
         <Modal centered show={modalShow} onHide={() => setModalShow(false)} className='centered-modal'>
-          <Modal.Header closeButton>
-          </Modal.Header>
           <Modal.Body className='login-modal-body'>
             <form className='create'>
               <h1 className='modal-title'>Register</h1>
@@ -122,8 +120,6 @@ export default function Nav() {
         </Modal>
 
         <Modal centered show={loginModalShow} onHide={() => setLoginModalShow(false)} className='centered-modal'>
-          <Modal.Header closeButton>
-          </Modal.Header>
           <Modal.Body className='login-modal-body'>
             <form className='login'>
               <h2 className='modal-title'>Login</h2>

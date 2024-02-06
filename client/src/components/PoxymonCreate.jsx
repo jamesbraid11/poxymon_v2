@@ -13,23 +13,11 @@ export default function PoxymonCreate() {
   const [image, setImage] = useState('')
 
   const [pointsRemaining, setPointsRemaining] = useState(500)
-  // const [input, setInput] = useState({
-  //   speed: 0,
-  //   hp: 0,
-  //   move_one_power: 0,
-  //   move_two_power: 0,
-  // })
+
   const [speed, setSpeed] = useState(100)
   const [hp, setHp] = useState(100)
   const [moveOnePower, setMoveOnePower] = useState(0)
   const [moveTwoPower, setMoveTwoPower] = useState(0)
-
-  // const handleInput = function(e) {
-  //   setInput({
-  //     ...input,
-  //     [e.target.name]: e.target.value
-  //   })
-  // }
   
   const handleSpeed = function (e) {
     setSpeed(e.target.value)

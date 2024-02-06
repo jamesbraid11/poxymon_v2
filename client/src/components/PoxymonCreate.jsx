@@ -33,20 +33,20 @@ export default function PoxymonCreate() {
   }
 
   useEffect(() => {
-    console.log(
-      `SPEED -> ${speed},
-      HP -> ${hp},
-      M1POWER -> ${moveOnePower},
-      M2POWER -> ${moveTwoPower},
-      PREMAINING -> ${pointsRemaining}`
-    )
+    // console.log(
+    //   `SPEED -> ${speed},
+    //   HP -> ${hp},
+    //   M1POWER -> ${moveOnePower},
+    //   M2POWER -> ${moveTwoPower},
+    //   PREMAINING -> ${pointsRemaining}`
+    // )
     setPointsRemaining(500 - Number(speed) - Number(hp) - Number(moveOnePower) - Number(moveTwoPower))
   }, [speed, hp, moveOnePower, moveTwoPower])
 
   useEffect(() => {
+    console.log(res)
     if (res?.status === 201) {
       console.log('CREATED SUCCESSFULLY')
-      console.log(res)
       navigate(`/poxymon/${res.data.id}/`)
     }
   }, [res, navigate])
@@ -55,7 +55,7 @@ export default function PoxymonCreate() {
     <>
       <h1 className="poxymon-create">Create a Poxymon!</h1>
       <Container className="create-container">
-        <Form className="create-form" method="POST">
+        <Form onSubmit={e => e.preventDefault()} className="create-form" method="POST">
           <label htmlFor="name">Name</label>
           <input className="create-input" type="text" name="name" />
           <div className="create-image">

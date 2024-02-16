@@ -8,7 +8,7 @@
 }
 
 .single-title {
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 .back-btn {
@@ -25,12 +25,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-right: 20px;
 }
 
 .single-image {
   width: 480px;
-  height: 500px;
+  max-height: 540px;
 }
 
 .btn-container {

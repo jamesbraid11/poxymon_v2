@@ -8,7 +8,7 @@ export default function PoxymonCreate() {
   const types = useLoaderData()
   const res = useActionData()
   const navigate = useNavigate()
-  console.log(types)
+  // console.log(types)
 
   const [image, setImage] = useState('')
 
@@ -55,7 +55,7 @@ export default function PoxymonCreate() {
     <>
       <h1 className="poxymon-create">Create a Poxymon!</h1>
       <Container className="create-container">
-        <Form onSubmit={e => e.preventDefault()} className="create-form" method="POST">
+        <Form className="create-form" method="POST">
           <label htmlFor="name">Name</label>
           <input className="create-input" type="text" name="name" />
           <div className="create-image">
@@ -124,8 +124,8 @@ export default function PoxymonCreate() {
               <input className="stat-input create-input" type="number" name="move_two_power" defaultValue="0" max="100" onChange={handleMoveTwoPower} />
             </div>
           </div>
+          {res?.statusText && <p className="error-message">{res.statusText}</p>}
           {pointsRemaining >= 0 && <button className="button" id="create-submit-btn" type="submit">Create Poxymon</button>}
-          {res?.data?.message && <p className='danger bold mt-4'>{res.data.message}</p>}
         </Form>
       </Container >
     </>

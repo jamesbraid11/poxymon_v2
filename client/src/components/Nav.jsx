@@ -77,13 +77,13 @@ export default function Nav() {
           <nav className="main-menu" onClick={() => setShow(false)}>
             <ul className='burger-menu nav nav-underline'>
               <li className='nav-item'>
-                <Link to='/' className='nav-link' >Home</Link>&nbsp;
+                <Link to='/' className='nav-link'>Home</Link>&nbsp;
               </li>
               <li className='nav-item'>
                 <Link to='/poxymon' className='nav-link'>Poxymon</Link>&nbsp;
               </li>
               <li className='nav-item'>
-                <Link to='/poxymon/create' className='nav-link'>Create Poxymon</Link>&nbsp;
+                <Link to='/poxymon/create' className='nav-link'>Create</Link>&nbsp;
               </li>
               <li className='nav-item'>
                 <Link to='/battle' className='nav-link'>Battle</Link>&nbsp;

@@ -1,37 +1,9 @@
 
 
-// header {
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-
-.nav-toggle {
-  background: none;
-  border: none;
-  margin-right: 20px;
-  span {
-    height: 4px;
-    display: block;
-    width: 30px;
-    margin: 5px;
-    border-radius: 5px;
-    background-color: #80ff00;
-    margin-bottom: 3px;
-  }
-}
-
 .modal-title {
   color: #80ff00;
   font-size: 60px;
   text-shadow: 0 0 3px black, 0 0 3px black, 0 0 3px black, 0 0 3px black;
-}
-
-svg {
-  width: 33px;
-  background: none;
-  border: none;
 }
 
 .create {
@@ -39,68 +11,74 @@ svg {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 50vh; 
+  height: 390px;
   box-sizing: border-box;
-  background: rgba(58,49,40,.65);
+  background: rgba(58, 49, 40, .65);
   border-radius: 12px;
-  max-width: 400px;
+  max-width: 350px;
   padding: 8px;
   width: 100%;
 }
-form.create {
-  position: fixed;
-  width: 450px;
-  position: fixed;
-  bottom: 40;
-  width: 100%;
-  position: absolute;
-  bottom: 4px;
-}
-.modal-body {
-  height: 50vh;
-}
-.modal-header{
+
+.modal-header {
   border: none;
+  width: 480px;
 }
+
 .modal-content {
   background-color: transparent;
   border: none;
 }
+
 .nav-item {
   background-color: transparent;
 }
+
+#login-button {
+  margin: 10px auto;
+}
+
 .account {
   color: white;
 }
-button.btn-close {
+
+.login-switch {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #80ff00;
+}
+
+.btn-close {
   background-color: white;
   width: 0px;
   height: 0px;
-}
-.modal-header {
-  width: 20px;
+  padding-left: 30px;
+  align-items: right;
 }
 
 a.nav-link {
   color: white;
   margin-left: 80px;
 }
+
 li.nav-item {
   background: none;
 }
+
 a.nav-link:hover {
   color: #80ff00;
 }
-form.log_in {
+
+.login {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 40vh; 
+  height: 290px;
   box-sizing: border-box;
-  background: rgba(58,49,40,.65);
+  background: rgba(58, 49, 40, .65);
   border-radius: 12px;
-  max-width: 400px;
+  max-width: 350px;
   padding: 8px;
   width: 100%;
 }
@@ -108,11 +86,13 @@ form.log_in {
 .modal-body {
   display: flex;
   justify-content: center;
-  backdrop-filter: blur(1px);
+  // backdrop-filter: blur(1px);
+  height: 50vh;
 }
-.icon {
-  margin-right: 20px;
-}
+
+// .icon {
+//   margin-right: 20px;
+// }
 
 input {
   background-color: #fff;
@@ -122,13 +102,26 @@ input {
   border-radius: 9px;
   display: block;
   height: 5vh;
-  width: 100%;
+  width: 80%;
 }
 
 .centered-modal {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+}
+
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin-top: 100px;
+  // transform: translate(-50%, -50%);
+  // margin-top: 50%;
+  // margin-left: 50%;
 }
 
 .container {
@@ -142,25 +135,33 @@ input {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  margin: 0;
   background-color: #458900;
   height: 9vh;
 }
-nav {
+
+.main-menu {
   display: flex;
   flex-direction: column;
 }
+
 :root.fade.modal-backdrop.show {
   background-color: transparent;
 }
+
 .index {
   width: 200px;
-  background-color: rgba(58,49,40,.65);
-  // backdrop-filter: blur(1px);
-  background-color: transparent;
-  align-items: right;
+  background-color: #458900;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: right;
+  // justify-content: right;
+  // position: fixed;
+  // transform: translate(-50%, -50%);
+  // margin-top: 40%;
+  // margin-left: 92%;
+
 }
-
-
 
 .burger-menu {
   display: flex;
@@ -168,15 +169,11 @@ nav {
   background-color: transparent;
 }
 
-.header-menus {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .header-title {
-  width: 200px;
-  height: 77px;
+  // width: 200px;
+  // height: 77px;
+  height: 7vh;
+  width: 20vh;
   background-image: url('../images/poxymon-logo.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -184,11 +181,25 @@ nav {
   margin-left: 20px;
 }
 
-.user-icon {
-  height: 37px;
-}
+// .user-icon {
+//   height: 4vh;
+//   width: 4vw;
+// }
 .user-icon:hover {
   cursor: pointer;
+}
+
+.menu-icon {
+  color: #80ff00;
+  height: 5vh;
+  width: 5vw;
+  margin-right: 15px;
+}
+
+.login-icon {
+  height: 4vh;
+  width: 4vw;
+  margin-right: 5px;
 }
 
 .button {
@@ -202,8 +213,13 @@ nav {
   background-color: black;
   margin: 5px 0;
 }
+
 .button:hover {
   background-color: #80ff00;
   color: black;
   border: 2.5px solid black;
+}
+
+.login-modal-body {
+  padding: 0;
 }

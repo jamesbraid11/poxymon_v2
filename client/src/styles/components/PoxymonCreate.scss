@@ -12,6 +12,25 @@
   border: 2px solid black;
 }
 
+.points-remaining {
+  margin: 0 0 6px 0;
+  width: 140px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.points-remaining-value {
+  margin: 10px 0 5px 4px;
+}
+
+.points-description {
+  margin: 10px auto;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .uploaded-image {
   width: 480px;
   margin-bottom: 6px;
@@ -57,4 +76,10 @@ textarea {
 
 #create-submit-btn {
   margin: 20px;
+}
+
+.error-message {
+  font-weight: bold;
+  color: red;
+  margin: 0;
 }

@@ -1,3 +1,27 @@
+.filters-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+#search, #dropdown {
+  color: #80ff00;
+  padding: 5px 20px;
+  border: 2.5px solid #80ff00;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  background-color: black;
+  margin: 10px 10px;
+}
+
+#dropdown {
+  height: 40px;
+}
+
+#search {
+  width: 200px;
+}
+
 .container {
   width: 100%;
   margin-bottom: 58px;

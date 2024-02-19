@@ -44,27 +44,21 @@ export default function Poxymon() {
 
   return (
     <>
+      <div className="filters-container">
+        {/* Dropdown menu */}
+        <select id="dropdown" name="type" value={filters.type.name} onChange={handleChange}>
+          <option value="All">All</option>
+          {types.length > 0 &&
+            types.map(type => {
+              return <option key={type} value={type}>{type}</option>
+            })
+          }
+        </select>
+        {/* Search bar */}
+        <input id="search" name="search" placeholder='Search...' value={filters.search}
+          onChange={handleChange} />
+      </div>
       <Container>
-        <Row>
-          <Col xs={6} md={4} lg={3}>
-            <div className="custom-select">
-              {/* Dropdown menu */}
-              <select id="dropdown" name="type" value={filters.type.name} onChange={handleChange}>
-                <option value="All">All</option>
-                {types.length > 0 &&
-                  types.map(type => {
-                    return <option key={type} value={type}>{type}</option>
-                  })
-                }
-              </select>
-            </div>
-          </Col>
-          <Col xs={6} md={4} lg={3}>
-            {/* Search bar */}
-            <input id="search" name="search" placeholder='Search...' value={filters.search}
-              onChange={handleChange} />
-          </Col>
-        </Row>
         <Row className='poxymon-list'>
           {/* Display filtered results on page */}
           {filteredPoxymon.length > 0 &&

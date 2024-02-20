@@ -14,7 +14,7 @@ export default function PoxymonSingle() {
         </div>
         <div className="single-container">
           <div className="single-image-container">
-            <img className="single-image" src={poxymon.image} alt="poxymon-image" />
+          <div className="single-image" style={{backgroundImage: `url(${poxymon.image})`}}></div>
             <div className="btn-container">
               <Link to={'/poxymon'} className="button back-btn">Back</Link>
               {activeUser() === poxymon.creator.id &&

@@ -83,7 +83,7 @@ export default function Nav() {
                 <Link to='/poxymon' className='nav-link'>Poxymon</Link>&nbsp;
               </li>
               <li className='nav-item'>
-                <Link to='/poxymon/create' className='nav-link'>Create Poxymon</Link>&nbsp;
+                <Link to='/poxymon/create' className='nav-link'>Create</Link>&nbsp;
               </li>
               <li className='nav-item'>
                 <Link to='/battle' className='nav-link'>Battle</Link>&nbsp;

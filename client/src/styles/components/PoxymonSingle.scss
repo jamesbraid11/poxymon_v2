@@ -31,7 +31,10 @@
 
 .single-image {
   width: 480px;
-  max-height: 540px;
+  height: 480px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-container {

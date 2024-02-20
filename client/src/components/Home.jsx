@@ -35,7 +35,7 @@ export default function Home() {
             <div className="main-stats">HP {poxymon.hp}</div>
           </div>
           <h3 className="poxymon-name">{poxymon.name}</h3>
-          <img src={poxymon.image} alt="poxymon-image" />
+          <div className="card-image" style={{backgroundImage: `url(${poxymon.image})`}}></div>
           <div className="moves-container">
             <div className="move-names">
               <h5>&nbsp;&nbsp;&nbsp;&nbsp;Move</h5>

@@ -4,11 +4,7 @@ import { useEffect, useState } from 'react'
 export default function Home() {
 
   const allPoxymon = useLoaderData()
-
   const [poxymon, setPoxymon] = useState(allPoxymon[0])
-
-  // console.log(allPoxymon)
-  // console.log(poxymon)
 
   useEffect(() => {
     const i = Math.floor(Math.random() * allPoxymon.length)

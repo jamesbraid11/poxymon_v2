@@ -29,13 +29,13 @@ export default function Poxymon() {
 
   // ! Effects
   useEffect(() => {
-    // Update display of shown characters by name according to keys typed by user AND any dropdown selected by their house
+    // Update display of shown poxymon by name according to keys typed by user AND any dropdown selected by their type
     const pattern = new RegExp(filters.search, 'i')
     const filteredArray = allPoxymon.filter(poxymon => {
       return pattern.test(poxymon.name) && (poxymon.type.name === filters.type || filters.type === 'All')
     })
     setFilteredPoxymon(filteredArray)
-    // Update dropdown houses options by collating them from fetched data
+    // Update dropdown type options by collating them from fetched data
     if (allPoxymon.length > 0 && types.length === 0) {
       const typesArr = [...new Set(allPoxymon.map(poxymon => poxymon.type.name))].filter(Boolean)
       setTypes(typesArr)

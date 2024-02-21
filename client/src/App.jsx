@@ -17,7 +17,7 @@ function App() {
             <Outlet />
             :
             <div className='centred'>
-              <img src={Loading} alt="spinner" style={{ width: '20rem' }} className="spinner"/>
+              <img src={Loading} alt="monster loading gif" style={{ width: '20rem' }}/>
             </div>
         }
       </main>

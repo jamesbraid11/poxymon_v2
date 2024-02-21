@@ -15,7 +15,6 @@ export default function ImageUploadField({ image, setImage }) {
 
     // send form to endpoint
     const { data: { secure_url } } = await axios.post(endpoint, data)
-
     setImage(secure_url)
   }
 

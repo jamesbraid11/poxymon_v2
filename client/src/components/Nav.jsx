@@ -64,7 +64,7 @@ export default function Nav() {
 
   return (
     <>
-      <div className='navbar'>
+      <section className='navbar'>
         <div className="header-title"><Link to='/'></Link></div>
         <div className="header-menu">
             <FaRegUserCircle fill="#80ff00" className="user-icon login-icon" onClick={toggleModal}/>
@@ -140,7 +140,7 @@ export default function Nav() {
             </form>
           </Modal.Body>
         </Modal>
-      </div>
+      </section>
     </>
   )
 }

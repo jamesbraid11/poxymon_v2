@@ -17,7 +17,8 @@ class RegistrationSerializer(serializers.ModelSerializer):
   # validating passwords
   def validate(self, data):
     password = data.get('password')
-    password_confirmation = data.pop('password_confirmation') # removes password_confirmation from the data object
+    password_confirmation = data.pop('password_confirmation') 
+    # removes password_confirmation from the data object
 
     # validate passwords
     if password != password_confirmation:

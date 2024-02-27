@@ -10,7 +10,7 @@ My final project from my SEI training is a full stack application with a Python 
 
 ## Code Installation
 
-1. [GitHub repo](https://github.com/jamesbraid11/poxymon_v2)
+1. Navigate to [GitHub repo](https://github.com/jamesbraid11/poxymon_v2)
 2. Download directory
 3. Server side:
    - npm install in root directory

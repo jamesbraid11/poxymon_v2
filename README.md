@@ -10,14 +10,14 @@ My final project from my SEI training is a full stack application with a Python 
 
 ## Code Installation
 
-1. [GitHub Repo](https://github.com/jamesbraid11/poxymon_v2) >>
-2. Download directory >>
+1. [GitHub repo](https://github.com/jamesbraid11/poxymon_v2)
+2. Download directory
 3. Server side:
-   i. npm install in root directory
-   ii. npm run serve
+   - npm install in root directory
+   - npm run serve
 4. Client side (cd to client directory):
-   i. npm install
-   ii. npm run dev
+   - npm install
+   - npm run dev
 5. Open local host in local browser
 
 ## Timeframe & Working Team

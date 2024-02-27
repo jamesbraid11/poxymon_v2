@@ -139,7 +139,7 @@ I then created functions for setting, getting and removing JSON Web Tokens to/fr
 
 On the Home component, I set it up as shown in the planning wireframe, with the poxymon logo and about blurb on the left and a button and poxymon ‘card’ on the right. I used intricate JSX markup and flexbox to create an exciting design for the card. I then created functions to serve get requests for the poxymon model and loaded it into the Home component to fill the card with relevant data. I gave the type field and move type fields ids of poxymon.type.name and created styling in Sass for each type name so that each would display in a different colour. I also gave the parent div of the card the classname of poxymon.type.name and created styling in Sass in the same way so that the background of each card would be a lightened version of a poxymon’s type colour using a linear-gradient.
 
-![21-poxymon-home-screen](https://github.com/jamesbraid11/poxymon_v2/assets/147768485/120a0583-f9c5-4529-963f-f493fe3d71e1)
+<img width="1313" alt="21-poxymon-home-screen" src="https://github.com/jamesbraid11/poxymon_v2/assets/147768485/4968c59e-3084-41a3-b6f0-59232f77a904">
 
 I then wrote code that would select a random poxymon to display from the database upon clicking the button above the poxymon card. I wanted users to be drawn in immediately on the home page by showing records from the model.
 
@@ -149,11 +149,11 @@ On the Poxymon component, I used the same loader of the poxymon model to display
 
 ![23-filters-function](https://github.com/jamesbraid11/poxymon_v2/assets/147768485/daea164b-192f-44b3-bcf7-44dadc7e1040)
 
-![24-poxymon-list-screen](https://github.com/jamesbraid11/poxymon_v2/assets/147768485/49e7bc08-7646-47ad-8c58-037480c4334a)
+<img width="1297" alt="24-poxymon-list-screen" src="https://github.com/jamesbraid11/poxymon_v2/assets/147768485/e6fb1cea-6505-4923-b942-0304f0558f60">
 
 Next, I created the PoxymonSingle component. I created a new function and loader for it that would only return the record of a single poxymon. I changed the styling from the poxymon card structure used so far to make the component feel more unique. I also included all data fields so that the creator and poxymon description would be visible.
 
-![25-poxymon-single-screen](https://github.com/jamesbraid11/poxymon_v2/assets/147768485/37094a74-3c14-48af-9c13-cd2d64ecf45f)
+<img width="1253" alt="25-poxymon-single-screen" src="https://github.com/jamesbraid11/poxymon_v2/assets/147768485/122dedc2-c3c9-4ac1-aec2-717131d42587">
 
 From there, I moved on to the PoxymonCreate component. After creating a form with all necessary fields, I began setting up an ImageUploadField component linked to Cloudinary to store images. I made this secure by exporting Cloudinary account data to a .env file.
 
@@ -161,7 +161,7 @@ From there, I moved on to the PoxymonCreate component. After creating a form wit
 
 After completing this, I added one last element to the form that would track the combined total of stats input by a user. If the total surpasses 500, the create button to submit the form disappears from the page. I have since learned that you could check for this on the server side, which I will aim to change to in the future, reporting a useful message back to the user.
 
-![27-poxymon-cretae-screen](https://github.com/jamesbraid11/poxymon_v2/assets/147768485/33763aeb-5b78-46c1-a8eb-c4504a8485f0)
+<img width="1521" alt="27-poxymon-create-screen" src="https://github.com/jamesbraid11/poxymon_v2/assets/147768485/bafb4782-e547-41ef-8924-c0e40c3f4034">
 
 I set up the PoxymonUpdate component to look identical to this, but added a loader of the single poxymon requested by a user so that fields are populated with current data. I also added a delete button.
 

@@ -71,31 +71,29 @@ export default function Nav() {
             <IoMenu className='nav-toggle user-icon menu-icon' onClick={() => setShow(true)} />
         </div>
 
-        <Modal show={show} fullscreen={false} onHide={() => setShow(false)} className='index'>
-          <Modal.Header closeButton>
-          </Modal.Header>
+        <Modal backdropClassName="burger-menu-backdrop" show={show} onHide={() => setShow(false)} className='index'>
           <nav className="main-menu" onClick={() => setShow(false)}>
             <ul className='burger-menu nav nav-underline'>
               <li className='nav-item'>
-                <Link to='/' className='nav-link'>Home</Link>&nbsp;
+                <Link to='/' className='nav-link' >Home</Link>
               </li>
               <li className='nav-item'>
-                <Link to='/poxymon' className='nav-link'>Poxymon</Link>&nbsp;
+                <Link to='/poxymon' className='nav-link'>Poxymon</Link>
               </li>
               <li className='nav-item'>
-                <Link to='/poxymon/create' className='nav-link'>Create</Link>&nbsp;
+                <Link to='/poxymon/create' className='nav-link'>Create</Link>
               </li>
               <li className='nav-item'>
-                <Link to='/battle' className='nav-link'>Battle</Link>&nbsp;
+                <Link to='/battle' className='nav-link'>Battle</Link>
               </li>
               <li className='nav-item'>
-                <Link to='/profile' className='nav-link'>Profile</Link>&nbsp;
+                <Link to='/profile' className='nav-link'>Profile</Link>
               </li>
             </ul>
           </nav>
         </Modal>
 
-        <Modal centered show={modalShow} onHide={() => setModalShow(false)} className='centered-modal'>
+        <Modal backdropClassName="register-backdrop" centered show={modalShow} onHide={() => setModalShow(false)} className='centered-modal'>
           <Modal.Body className='login-modal-body'>
             <form className='create'>
               <h1 className='modal-title'>Register</h1>
@@ -119,7 +117,7 @@ export default function Nav() {
           </Modal.Body>
         </Modal>
 
-        <Modal centered show={loginModalShow} onHide={() => setLoginModalShow(false)} className='centered-modal'>
+        <Modal backdropClassName="register-backdrop" centered show={loginModalShow} onHide={() => setLoginModalShow(false)} className='centered-modal'>
           <Modal.Body className='login-modal-body'>
             <form className='login'>
               <h2 className='modal-title'>Login</h2>

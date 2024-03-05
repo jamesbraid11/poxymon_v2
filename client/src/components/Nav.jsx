@@ -71,25 +71,23 @@ export default function Nav() {
             <IoMenu className='nav-toggle user-icon menu-icon' onClick={() => setShow(true)} />
         </div>
 
-        <Modal show={show} fullscreen={false} onHide={() => setShow(false)} className='index'>
-          <Modal.Header closeButton>
-          </Modal.Header>
+        <Modal show={show} onHide={() => setShow(false)} className='index'>
           <nav className="main-menu" onClick={() => setShow(false)}>
             <ul className='burger-menu nav nav-underline'>
               <li className='nav-item'>
-                <Link to='/' className='nav-link' >Home</Link>&nbsp;
+                <Link to='/' className='nav-link' >Home</Link>
               </li>
               <li className='nav-item'>
-                <Link to='/poxymon' className='nav-link'>Poxymon</Link>&nbsp;
+                <Link to='/poxymon' className='nav-link'>Poxymon</Link>
               </li>
               <li className='nav-item'>
-                <Link to='/poxymon/create' className='nav-link'>Create</Link>&nbsp;
+                <Link to='/poxymon/create' className='nav-link'>Create</Link>
               </li>
               <li className='nav-item'>
-                <Link to='/battle' className='nav-link'>Battle</Link>&nbsp;
+                <Link to='/battle' className='nav-link'>Battle</Link>
               </li>
               <li className='nav-item'>
-                <Link to='/profile' className='nav-link'>Profile</Link>&nbsp;
+                <Link to='/profile' className='nav-link'>Profile</Link>
               </li>
             </ul>
           </nav>

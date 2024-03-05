@@ -58,11 +58,13 @@
 
 a.nav-link {
   color: white;
-  margin-left: 80px;
+  width: 68px;
 }
 
 li.nav-item {
   background: none;
+  display: flex;
+  justify-content: center;
 }
 
 a.nav-link:hover {
@@ -150,17 +152,11 @@ input {
 }
 
 .index {
-  width: 200px;
+  width: 14vw;
   background-color: #458900;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: right;
-  // justify-content: right;
-  // position: fixed;
-  // transform: translate(-50%, -50%);
-  // margin-top: 40%;
-  // margin-left: 92%;
-
+  margin-left: 86vw;
+  margin-top: 9vh;
+  height: auto;
 }
 
 .burger-menu {

@@ -71,7 +71,7 @@ export default function Nav() {
             <IoMenu className='nav-toggle user-icon menu-icon' onClick={() => setShow(true)} />
         </div>
 
-        <Modal show={show} onHide={() => setShow(false)} className='index'>
+        <Modal backdropClassName="burger-menu-backdrop" show={show} onHide={() => setShow(false)} className='index'>
           <nav className="main-menu" onClick={() => setShow(false)}>
             <ul className='burger-menu nav nav-underline'>
               <li className='nav-item'>
@@ -93,7 +93,7 @@ export default function Nav() {
           </nav>
         </Modal>
 
-        <Modal centered show={modalShow} onHide={() => setModalShow(false)} className='centered-modal'>
+        <Modal backdropClassName="register-backdrop" centered show={modalShow} onHide={() => setModalShow(false)} className='centered-modal'>
           <Modal.Body className='login-modal-body'>
             <form className='create'>
               <h1 className='modal-title'>Register</h1>
@@ -117,7 +117,7 @@ export default function Nav() {
           </Modal.Body>
         </Modal>
 
-        <Modal centered show={loginModalShow} onHide={() => setLoginModalShow(false)} className='centered-modal'>
+        <Modal backdropClassName="register-backdrop" centered show={loginModalShow} onHide={() => setLoginModalShow(false)} className='centered-modal'>
           <Modal.Body className='login-modal-body'>
             <form className='login'>
               <h2 className='modal-title'>Login</h2>

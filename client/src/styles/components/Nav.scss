@@ -165,6 +165,18 @@ input {
   background-color: transparent;
 }
 
+.modal-backdrop.show {
+  opacity: 0;
+}
+
+.burger-menu-backdrop {
+  opacity: 0;
+}
+
+.register-backdrop.show {
+  opacity: 0.5;
+}
+
 .header-title {
   // width: 200px;
   // height: 77px;
